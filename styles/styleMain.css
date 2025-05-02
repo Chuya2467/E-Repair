@@ -237,29 +237,20 @@
 
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto;  
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        .container > div{
             text-align: center;
-
-        /*    grid-gap: 5rem; 
-
-
-            display: flex;
-            position: relative;
-            justify-content: center;
-            align-items: center;    */
-
+            
         }
 
         #model_1, #model_2, #model_3, #model_4, #model_5, #model_6 {
             border: 1px solid red;
             border-radius: 20%;
-            
-            width: fit-content;
 
-            /*margin: 5rem;*/
-            margin-top: 5rem;
-            margin-left: 15rem;
+            margin: 5rem;
         }
 
         h2 {
