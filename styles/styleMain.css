@@ -274,3 +274,8 @@
             height: 10rem;
             width: 8rem;
         }     
+
+        .phone_model{
+            color: var(--bg-dark);
+            text-decoration: none;
+        }
