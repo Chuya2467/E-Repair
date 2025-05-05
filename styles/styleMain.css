@@ -183,6 +183,7 @@
 
     /*Katya ;) */
 
+    /*made grid for phone models + animation*/
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -192,9 +193,9 @@
 
     .container > div{
         text-align: center;
-        
     }
 
+    /*to each model specifically made borders*/
     #model_1, #model_2, #model_3, #model_4, #model_5, #model_6 {
         border-radius: 20%;
         padding: 1rem;
@@ -208,6 +209,7 @@
         animation: fadeIn 1s ease-out;
     }
 
+    /*for link "Back"*/
     #another_A {
         text-decoration: none;
         color: var(--bg-medium);
@@ -218,16 +220,19 @@
         text-align: left;
     }
 
+    /*for every image*/
     img {
         height: 10rem;
         width: 8rem;
     }     
 
+    /*edited links*/
     .phone_model{
         color: var(--bg-dark);
         text-decoration: none;
     }
 
+    /*for icon specifically*/
     #icon {
         height: 40px;
         width: auto;
