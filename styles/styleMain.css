@@ -279,3 +279,9 @@
             color: var(--bg-dark);
             text-decoration: none;
         }
+
+        #icon {
+            height: 50px;
+            width: auto;
+            background-color: #2c2f48;
+        }
