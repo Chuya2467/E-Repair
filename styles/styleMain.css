@@ -49,9 +49,8 @@
     nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;  /*All elements will be aligned on cener */
-        max-width: 1200px;
-        margin: 0 auto;
+        align-items: center;  /*All elements will be aligned on center */
+        max-width: 1500px;
     }
 
     .logo {
@@ -227,4 +226,9 @@
     .phone_model{
         color: var(--bg-dark);
         text-decoration: none;
+    }
+
+    #icon {
+        height: 40px;
+        width: auto;
     }
