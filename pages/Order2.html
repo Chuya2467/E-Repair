@@ -51,13 +51,9 @@
             let backGlass = +0.00;
             let motherboard = +0.00;
 
-            document.getElementsByClassName("model").addEventListener("click", save);
+            const model = parseInt(sessionStorage.getItem("model"));
 
-            function save()
-            {
-                //sessionStorage.getItem("model");
-
-                switch(sessionStorage.getItem("model").value)
+                switch(model)
                 {
                     case 11:
                         screen = 120.00;
@@ -91,7 +87,25 @@
                         break;
                 }
 
-                sessionStorage.setItem = ("screen", 100);
+            document.getElementsByClassName("model")[0].addEventListener("click", savePrice1);
+
+            document.getElementsByClassName("model")[1].addEventListener("click", savePrice2);
+
+            document.getElementsByClassName("model")[2].addEventListener("click", savePrice3);
+
+            function savePrice1()
+            {
+                sessionStorage.setItem("screen", screen);
+            }
+
+            function savePrice2()
+            {
+                sessionStorage.setItem("backGlass", backGlass);
+            }
+
+            function savePrice3()
+            {
+                sessionStorage.setItem("motherboard", motherboard);
             }
             
         </script>
