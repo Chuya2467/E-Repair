@@ -237,3 +237,21 @@
         height: 40px;
         width: auto;
     }
+
+    .price{
+        color: var(---text-gray);
+    }
+
+    .price{
+        color: var(--bg-medium);
+    }
+
+    .service{
+        text-decoration: none;
+        color: var(--bg-medium);
+        width: fit-content;
+        height: fit-content;
+        padding: 0.9rem 1.5rem;
+        font-size: 0.9rem;
+        text-align: left;
+    }
