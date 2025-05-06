@@ -35,14 +35,14 @@
 
             <div class="container"> <!--boxes with phone models-->
                 <div>
-                    <button id="model_1" data-key="model_1" data-value="11"><a href="Order2.html" class="phone_model"><img src="../images/iphone11.png"><p>Iphone 11</p></a></button>
-                    <button id="model_2" data-key="model_2" data-value="12"><a href="Order2.html" class="phone_model"><img src="../images/iphone12.png"><p>Iphone 12</p></a></button>
-                    <button id="model_3" data-key="model_3" data-value="13"><a href="Order2.html" class="phone_model"><img src="../images/iphone13.png"><p>Iphone 13</p></a></button>
+                    <button id="model"  data-value="11"><a href="Order2.html" class="phone_model"><img src="../images/iphone11.png"><p>Iphone 11</p></a></button>
+                    <button id="model" data-value="12"><a href="Order2.html" class="phone_model"><img src="../images/iphone12.png"><p>Iphone 12</p></a></button>
+                    <button id="model" data-value="13"><a href="Order2.html" class="phone_model"><img src="../images/iphone13.png"><p>Iphone 13</p></a></button>
                 </div>
                 <div>
-                    <button id="model_4" data-key="model_4" data-value="14"><a href="Order2.html" class="phone_model"><img src="../images/iphone14.png"><p>Iphone 14</p></a></button>
-                    <button id="model_5" data-key="model_5" data-value="15"><a href="Order2.html" class="phone_model"><img src="../images/iphone15.png"><p>Iphone 15</p></a></button>
-                    <button id="model_6" data-key="model_6" data-value="16"><a href="Order2.html" class="phone_model"><img src="../images/iphone16.png"><p>Iphone 16</p></a></button>
+                    <button id="model" data-value="14"><a href="Order2.html" class="phone_model"><img src="../images/iphone14.png"><p>Iphone 14</p></a></button>
+                    <button id="model" data-value="15"><a href="Order2.html" class="phone_model"><img src="../images/iphone15.png"><p>Iphone 15</p></a></button>
+                    <button id="model" data-value="16"><a href="Order2.html" class="phone_model"><img src="../images/iphone16.png"><p>Iphone 16</p></a></button>
                 </div>
             </div>
 
@@ -56,10 +56,10 @@
         <script>
             //used AI to make this function. I couldn't do it myself
 
-            document.querySelectorAll('button[data-key][data-value]').forEach(button => {
+            document.querySelectorAll('button[id][data-value]').forEach(button => {
                 button.addEventListener('click', () => {
                     sessionStorage.clear();
-                    const key = button.getAttribute('data-key');
+                    const key = button.getAttribute('id');
                     const value = button.getAttribute('data-value');
                     sessionStorage.setItem(key, value);
                 });

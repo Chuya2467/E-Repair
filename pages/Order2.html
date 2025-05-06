@@ -46,5 +46,56 @@
                 <p><a href="tel:+33887701998">+33887701998</a></p>
             </footer>
         </body>
+        <script>
+            let screen = 0.00;
+            let backGlass = 0.00;
+            let motherboard = 0.00;
+
+            localStorage.getItem("model");
+
+            switch(model)
+            {
+                case 11:
+                    screen = 120.00;
+                    backGlass = 70.00;
+                    motherboard = 200.00;
+                    break;
+                case 12:
+                    screen = 147.00;
+                    backGlass = 97.00;
+                    motherboard = 227.00;
+                    break;
+                case 13:
+                    screen = 174.00;
+                    backGlass = 124.00;
+                    motherboard = 254.00;
+                    break;
+                case 14:
+                    screen = 201.00;
+                    backGlass = 151.00;
+                    motherboard = 281.00;
+                    break;
+                case 15:
+                    screen = 228.00;
+                    backGlass = 178.00;
+                    motherboard = 308.00;
+                    break;
+                case 16:
+                    screen = 255.00;
+                    backGlass = 205.00;
+                    motherboard = 335.00;
+                    break;
+            }
+
+            document.getElementById("model_1").addEventListener("click", save);
+
+            function save()
+            {
+                sessionStorage.setItem = ("screen", screen);
+            }
+
+            
+
+        </script>
     </head>
     </html>
