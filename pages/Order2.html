@@ -15,6 +15,7 @@
 
                     <div class="logo">E-Repair</div>
                     
+                    <!--Link on next web site via image-->
                     <ul class="nav-list">
                         <li><a href="Cart.html"><img src="../images/shop cart icon.png" id="icon"></a></li>
                     </ul>
@@ -22,18 +23,20 @@
             </header>
 
             <h2>Pick a Servise</h2>
-
+            <!--3 possible servises-->
             <div class="container">
                 <div>
+                    <!--First servise-->
                     <button class="model"><a href="Cart.html" class="phone_model"><img src="../images/screen.png"><p class="service">Screen Replacement</p></a>
                         <br><p class="price">price</p>
                     </button>
 
-
+                    <!--Second servise-->
                     <button class="model"><a href="Cart.html" class="phone_model"><img src="../images/back.png"><p class="service">Back Glass Replacement</p>
                         <br><p class="price">price</p></a>
                     </button>
 
+                    <!--Third Servise-->
                     <button class="model"><a href="Cart.html" class="phone_model"><img src="../images/motherboard.png"><p class="service">Motherboard Repair</p>
                         <br><p class="price">price</p></a>
                     </button>
@@ -42,6 +45,8 @@
                 </div>
             </div>
 
+
+            <!--Footer, copied from index file-->
             <footer id="footer" id="Contact">
                 <p>Contact Us</p>
                 <p><a href="mailto:komlyk7@icloud.com">komlyk7@icloud.com</a></p>
@@ -49,12 +54,16 @@
             </footer>
         </body>
         <script>
+
+            //Creating 3 variables with price
             let screen = +0.00;
             let backGlass = +0.00;
             let motherboard = +0.00;
 
             const model = parseInt(sessionStorage.getItem("model"));
+            
 
+            //Default switch, if choosing model - price will change
                 switch(model)
                 {
                     case 11:
@@ -89,12 +98,16 @@
                         break;
                 }
 
+
+                //after click price will be saved
             document.getElementsByClassName("model")[0].addEventListener("click", savePrice1);
 
             document.getElementsByClassName("model")[1].addEventListener("click", savePrice2);
 
             document.getElementsByClassName("model")[2].addEventListener("click", savePrice3);
 
+
+            //3 funktions that will save the price
             function savePrice1()
             {
                 sessionStorage.setItem("service", "Screen");
@@ -112,7 +125,7 @@
                 sessionStorage.setItem("service", "Motherboard");
                 sessionStorage.setItem("price", motherboard);
             }
-
+            //Price + euro sign
             document.getElementsByClassName("price")[0].textContent = screen + "\u20AC";
             document.getElementsByClassName("price")[1].textContent = backGlass + "\u20AC";
             document.getElementsByClassName("price")[2].textContent = motherboard + "\u20AC";
