@@ -45,18 +45,6 @@
                 <p><a href="tel:+33887701998">+33887701998</a></p>
             </footer>
         </body>
-        <script>
-            //used AI to make this function. I couldn't do it myself
-
-            document.querySelectorAll('button[id][data-value]').forEach(button => {
-                button.addEventListener('click', () => {
-                    sessionStorage.clear();
-                    const key = button.getAttribute('id');
-                    const value = button.getAttribute('data-value');
-                    sessionStorage.setItem(key, value);
-                });
-            });
-
-        </script>
+        <script src="../JavaScript/js1.js"></script>
     </head>
     </html>
