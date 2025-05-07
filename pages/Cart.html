@@ -32,9 +32,9 @@
             <div class="container"> <!--boxes with phone models-->
                 <div>
                     <div>
-                        Model: Iphone ... <br>
-                        Servise: ... <br>
-                        Total cost: ... <br><br>
+                        <p id="finalModel">Model: Iphone ...</p>
+                        <p id="serviceName">Servise: ... </p>
+                        <p id="finalPrice">Total cost: ...</p><br>
                     </div>
                     <div>
                         <a id="another_A" class="cta-btn" href="https://aib.ie/ways-to-bank/internet-banking">Pay</a>
@@ -51,7 +51,13 @@
             </footer>
         </body>
         <script>
-            
+            //const model = parseInt(sessionStorage.getItem("model"));
+            //const price = parseDouble(sessionStorage.getItem("price"));
+            //const service = sessionStorage.getItem("service");
+
+            document.getElementById("finalModel").textContent =  "Model: Iphone " + sessionStorage.getItem("model");
+            document.getElementById("serviceName").textContent =  "Servise: " + sessionStorage.getItem("service");
+            document.getElementById("finalPrice").textContent =  "Total cost: " + sessionStorage.getItem("price") + ".00";
         </script>
     </head>
     </html>

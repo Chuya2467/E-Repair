@@ -14,7 +14,7 @@
                     <div class="logo">E-Repair</div>
                     
                     <ul class="nav-list">
-                        <li>Icon</li>
+                        <li><a href="Cart.html"><img src="../images/shop cart icon.png" id="icon"></a></li>
                     </ul>
                 </nav>
             </header>
@@ -23,7 +23,7 @@
 
             <div class="container">
                 <div>
-                    <button class="model"><a href="Cart.html" class="phone_model"><img src="../images/screen.png"><p class="service">Screen replacenet</p></a>
+                    <button class="model"><a href="Cart.html" class="phone_model"><img src="../images/screen.png"><p class="service">Screen Replacement</p></a>
                         <br><p class="price">price</p>
                     </button>
 
@@ -95,18 +95,25 @@
 
             function savePrice1()
             {
-                sessionStorage.setItem("screen", screen);
+                sessionStorage.setItem("service", "Screen");
+                sessionStorage.setItem("price", screen);
             }
 
             function savePrice2()
             {
-                sessionStorage.setItem("backGlass", backGlass);
+                sessionStorage.setItem("service", "Back Glass");
+                sessionStorage.setItem("price", backGlass);
             }
 
             function savePrice3()
             {
-                sessionStorage.setItem("motherboard", motherboard);
+                sessionStorage.setItem("service", "Motherboard");
+                sessionStorage.setItem("price", motherboard);
             }
+
+            document.getElementsByClassName("price")[0].textContent = screen + "\u20AC";
+            document.getElementsByClassName("price")[1].textContent = backGlass + "\u20AC";
+            document.getElementsByClassName("price")[2].textContent = motherboard + "\u20AC";
             
         </script>
     </head>
